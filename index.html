@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <form id="form-submit">
+      <input type="text" placeholder="Search city..." id="search-input" />
+      <ul id="lists"></ul>
+    </form>
+    <div id="weather" style="display: none">
+      <img src="" alt="" id="icon" />
+      <h1 id="degrees">20&#8451;</h1>
+      <h2 id="city">London</h2>
+      <button id="change">Change City</button>
+
+      <div class="info">
+        <div>
+          <h3>wind</h3>
+          <div id="windValue" class="value">2 <span class="">km/h</span></div>
+        </div>
+        <div>
+          <h3>Feels like</h3>
+          <div id="feelsLikeValue" class="value">
+            2 <span class="">km/h</span>
+          </div>
+        </div>
+        <div>
+          <h3>Humidity</h3>
+          <div id="humidityValue" class="value">
+            2 <span class="">km/h</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
