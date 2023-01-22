@@ -56,7 +56,7 @@ const showWeather = async (lat, lon) => {
   feelsLikeValue.innerHTML = `${feelsLike}<span>&#8451;</span>`;
   humidityValue.innerHTML = `${humidity}<span>%</span>`;
   windSpeedValue.innerHTML = `${windSpeed}<span>kh/h</span>`;
-  weatherIcon.src = `http://openweathermap.org/img/wn/${icon}@4x.png`;
+  weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@4x.png`;
 
   form.style.display = 'none';
   weather.style.display = 'block';
