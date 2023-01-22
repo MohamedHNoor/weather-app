@@ -20,7 +20,9 @@ const search = async () => {
   const data = await response.json();
   lists.innerHTML = '';
   data.forEach((item) => {
-    const { name, country, lat, lon } = item;
+    const {
+      name, country, lat, lon,
+    } = item;
     lists.innerHTML += `
     <li 
       data-lat=${lat} 
@@ -31,6 +33,7 @@ const search = async () => {
   });
 };
 
+// eslint-disable-next-line no-undef
 const debouncedSearch = _.debounce(() => {
   search();
 }, 600);
