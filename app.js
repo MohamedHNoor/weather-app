@@ -15,7 +15,7 @@ const changeBtn = document.getElementById('change');
 const search = async () => {
   const phrase = seachInput.value;
   const response = await fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${phrase}&limit=5&appid=${APIKey}`,
+    `https://api.openweathermap.org/geo/1.0/direct?q=${phrase}&limit=5&appid=${APIKey}`,
   );
   const data = await response.json();
   lists.innerHTML = '';
@@ -56,7 +56,7 @@ const showWeather = async (lat, lon) => {
   feelsLikeValue.innerHTML = `${feelsLike}<span>&#8451;</span>`;
   humidityValue.innerHTML = `${humidity}<span>%</span>`;
   windSpeedValue.innerHTML = `${windSpeed}<span>kh/h</span>`;
-  weatherIcon.src = `http://openweathermap.org/img/wn/${icon}@4x.png`;
+  weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@4x.png`;
 
   form.style.display = 'none';
   weather.style.display = 'block';
