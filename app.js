@@ -15,7 +15,7 @@ const changeBtn = document.getElementById('change');
 const search = async () => {
   const phrase = seachInput.value;
   const response = await fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${phrase}&limit=5&appid=${APIKey}`,
+    `https://api.openweathermap.org/geo/1.0/direct?q=${phrase}&limit=5&appid=${APIKey}`,
   );
   const data = await response.json();
   lists.innerHTML = '';
