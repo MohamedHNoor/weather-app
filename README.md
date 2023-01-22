@@ -40,6 +40,7 @@
 - HTML
 - CSS
 - localStorage
+- GitFlow
 - Linters
 
 <!-- LIVE DEMO -->
